@@ -5,9 +5,7 @@ int main(){
     if(a > 0 && b > 0){
         printf("False");
     }
-    elif(a == 0 && b == 0){
-        printf("False");
-    }
+  
     else{
         printf("True");
     }
