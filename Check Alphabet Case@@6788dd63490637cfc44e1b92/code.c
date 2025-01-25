@@ -2,11 +2,11 @@
 int main(){
     char ch;
     scanf("%c",&c);
-    if(a >= 'A' && a <='Z'){
+    if(a >= 'a' && a <='z'){
         printf("Uppercase");
     }
-    else if(a >= 'a' && a <= 'z'){
-        printf("Lowecase");
+    else if(a >= 'A' && a <= ''){
+        printf("Lowercase");
     }
     else{
         printf("Not an alphabet");
