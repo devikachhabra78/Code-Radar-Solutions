@@ -10,10 +10,10 @@ int main(){
         printf("%./2lf",a - b);
     }
     else if(c == '*'){
-        printf("%d",a * b);
+        printf("%%./2lf",a * b);
     }
     else if(c == '/'){
-        printf("%f",a/b);
+        printf("%./2lf",a/b);
     }
     else{
         printf("error");
