@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int a;
-    scanf("%d",&a);
-    if(a >> 1 == 1){
+    int n;
+    scanf("%d",&n);
+    if(n & (1<<31)){
         printf("Set");
     }
     else{
