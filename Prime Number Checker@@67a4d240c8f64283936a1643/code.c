@@ -14,6 +14,11 @@ int main(){
         int num;
         scanf("%d",&num);
         printf("%d\n",is_prime(num));
+        for(int i=2;i*i<=t;i++){
+            
+            if(i%t==0){
+                return 0;
+            }
         if(is_prime(t)){
             return 0;
         }
