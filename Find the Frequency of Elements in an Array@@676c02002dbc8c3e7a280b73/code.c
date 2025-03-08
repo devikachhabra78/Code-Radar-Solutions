@@ -14,7 +14,10 @@ int main(){
             }
         }
     }
-    printf("%d %d\n",arr[n],count);
+    for(int i=0;i<n;i++){
+        printf("%d %d",arr[i],count);
+    }
+
     return 0;
 
 }
