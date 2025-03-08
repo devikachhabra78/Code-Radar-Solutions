@@ -6,10 +6,12 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+
     for(int i=n-1;i>0;i--){
-        return arr[i];
+        result = arr[i];
+        return result;
     }
-    if(arr[n] == arr[i]){
+    if(arr[n] == result){
         printf("YES");
     }
     else{
