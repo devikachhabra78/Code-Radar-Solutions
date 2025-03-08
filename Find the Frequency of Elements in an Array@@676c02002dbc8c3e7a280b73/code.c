@@ -12,6 +12,9 @@ int main(){
             if(arr[i] == arr[j]){
                 count ++;
             }
+            else{
+            count = 1;
+            }
         }
     }
     for(int i=0;i<n;i++){
