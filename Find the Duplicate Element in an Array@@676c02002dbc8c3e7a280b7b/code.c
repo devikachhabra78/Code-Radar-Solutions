@@ -15,7 +15,7 @@ int main(){
             }
         }
     }
-    printf("%d",duplicate);
+    
     
     return 0;
 }
