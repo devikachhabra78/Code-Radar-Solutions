@@ -26,9 +26,10 @@ int main(){
             }
 
         }
-        printf("%d",smax);
+        
             
         }
     }
+    printf("%d",smax);
     return 0;
 }
