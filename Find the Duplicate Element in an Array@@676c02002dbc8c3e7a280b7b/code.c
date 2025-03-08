@@ -8,10 +8,11 @@ int main(){
         for(int j= i+1;j<n;j++){
             if(arr[i] == arr[j]){
                 duplicate = arr[i];
-                printf("%d",duplicate);
+                
             }
         }
     }
+    printf("%d",duplicate);
     
     return 0;
 }
