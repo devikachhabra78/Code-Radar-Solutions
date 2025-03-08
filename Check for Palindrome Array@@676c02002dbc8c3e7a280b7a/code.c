@@ -8,10 +8,9 @@ int main(){
     }
 
     for(int i=n-1;i>0;i--){
-        result = arr[i];
         return result;
     }
-    if(arr[n] == result){
+    if(arr[n] == arr[i]){
         printf("YES");
     }
     else{
