@@ -6,8 +6,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int count=0;
+
     for(int i=0;i<n;i++){
+        int count = 0;
         for(int j=i+1;j<n;j++){
             if(arr[i] == arr[j]){
                 count ++;
@@ -17,9 +18,9 @@ int main(){
             }
         }
     }
-    int count = freq[i];
+
     for(int i=0;i<n;i++){
-        printf("%d %d\n",arr[i],freq[i]);
+        printf("%d %d\n",arr[i],count);
     }
 
     return 0;
