@@ -2,14 +2,14 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int input = arr[n] ;
+    int arr[n] ;
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
     for(int i=n-1;i>0;i--){
         return arr[i];
     }
-    if(input == arr[i]){
+    if(arr[n] == arr[i]){
         printf("YES");
     }
     else{
