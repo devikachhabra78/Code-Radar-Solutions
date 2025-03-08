@@ -8,6 +8,7 @@ int main(){
         for(int j= i+1;j<n;j++){
             if(arr[i] == arr[j]){
                 duplicate = arr[i];
+                return duplicate;
                 
             }
         }
