@@ -32,7 +32,7 @@ int main(){
             smax = arr[i];
         }  
     }
-    if(allsame){
+    if(allsame==0){
         printf("-1");
     }
     else{
