@@ -33,7 +33,7 @@ int main(){
         }  
     }
     if(allsame){
-        return 0;
+        return -1;
     }
     else{
         printf("%d",smax);
