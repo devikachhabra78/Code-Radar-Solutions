@@ -12,9 +12,10 @@ int main(){
     }
     int max = arr[0];
     int smax = INT_MIN;
+    int allsame=1;
     for(int i=0;i<n;i++){
-        if(arr[0] == arr[i]){
-            return -1;
+        if(arr[0] != arr[i]){
+            allsame=0;
         }
     }
     for(int i=0;i<n;i++){
@@ -31,6 +32,11 @@ int main(){
             smax = arr[i];
         }  
     }
-    printf("%d",smax);
+    if(allsame){
+        return 0;
+    }
+    else{
+        printf("%d",smax);
+    }
     return 0;
 }
