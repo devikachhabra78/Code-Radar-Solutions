@@ -10,8 +10,11 @@ int main(){
     int sorted=1;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j] || arr[i]==arr[j]){
-                sorted=1;
+            if(arr[i]<arr[j]){
+                sorted;
+            }
+            else if(arr[i]==arr[j]){
+                sorted;
             }
         }
         sorted = 0;
