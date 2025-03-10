@@ -8,12 +8,9 @@ int main(){
     }
 
     int sorted=1;
-    if(n<2){
-        printf("Not Sorted");
-    }
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j]){
+            if(arr[i]<arr[j] || arr[i]==arr[j]){
                 sorted=1;
             }
         }
