@@ -8,9 +8,13 @@ int main(){
     }
 
     int sorted=1;
+    
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j]){
+            if(n<2){
+                return sorted=0;
+            }
+            else if(arr[i]<arr[j]){
                 return sorted;
             }
             else if(arr[i]==arr[j]){
