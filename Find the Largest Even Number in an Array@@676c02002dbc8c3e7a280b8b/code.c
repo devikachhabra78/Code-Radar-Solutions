@@ -13,7 +13,7 @@ int main(){
 
         }
         else{
-            return -1
+            return -1;
         }
     }
     printf("%d",max);
