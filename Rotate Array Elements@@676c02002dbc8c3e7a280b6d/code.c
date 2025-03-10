@@ -1,11 +1,11 @@
 #include<stdio.h>
-void rotate(int arr[],int a,int b){
+void reverse(int arr[],int a,int b){
     for(int i=a,j=b;i<=j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    return ;
+    return;
 
 }
 int main(){
@@ -18,11 +18,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     k=k%n;
-    rotate(arr,0,n-1);
-    rotate(arr,0,k-1);
-    rotate(arr,k,n-1);
+    reverse(arr,0,n-1);
+    reverse(arr,0,k-1);
+    reverse(arr,k,n-1);
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     
     return 0;
