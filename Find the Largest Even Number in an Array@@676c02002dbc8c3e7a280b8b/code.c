@@ -12,11 +12,14 @@ int main(){
             max = arr[i];
 
         }
-        else{
-            return -1;
-        }
+    
     }
-    printf("%d",max);
+    if(max == arr[0]){
+        printf("-1");
+    }
+    else{
+        printf("%d",max);
+    }
 
     return 0;
 }
