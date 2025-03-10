@@ -15,7 +15,7 @@ int main(){
         scanf("%d\n",&arr[i]);
     }
     int pairs=0;
-    int T=sum(arr);
+    int T=sum(arr,n);
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==T){
