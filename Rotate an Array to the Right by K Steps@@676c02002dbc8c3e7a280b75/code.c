@@ -19,7 +19,9 @@ int main(){
     rotate(arr,0,n-1);
     rotate(arr,0,k-1);
     rotate(arr,k,n-1);
-    printf("%d",arr);
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
 
     
     return 0;
