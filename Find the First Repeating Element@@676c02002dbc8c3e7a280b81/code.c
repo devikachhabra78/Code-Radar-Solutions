@@ -12,6 +12,7 @@ int main(){
             if(arr[i]==arr[j]){
             printf("%d\n",arr[i]);
             return 0;
+            }
         }
     }
     printf("-1\n");
