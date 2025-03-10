@@ -18,10 +18,13 @@ int main(){
     int T=sum(arr,n);
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]+arr[j]==T || arr[i]==arr[j]){
+            if(arr[i]+arr[j]==T){
                 pairs++;
                 printf("%d %d\n",arr[i],arr[j]);
-
+            }
+            else if(arr[i]==arr[j]){
+                printf("%d %d\n",arr[i],arr[j]);
+                break;
             }
         }
     }
