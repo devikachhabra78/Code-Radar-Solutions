@@ -18,8 +18,9 @@ int main(){
             reverse(arr,0,n-1);
 
         }
+        printf("%d",arr);
     }
-    printf("%d",arr);
+    
     return 0;
 
     }
