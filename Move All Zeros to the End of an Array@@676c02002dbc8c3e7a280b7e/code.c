@@ -5,6 +5,7 @@ int reverse(int arr[],int a,int b ){
         arr[i]=arr[j];
         arr[j]=temp;
     }
+    return arr;
 }
 int main(){
     int n;
@@ -18,8 +19,8 @@ int main(){
             reverse(arr,0,n-1);
 
         }
-        printf("%d",arr);
     }
+    printf("%d",arr)
     
     return 0;
 
