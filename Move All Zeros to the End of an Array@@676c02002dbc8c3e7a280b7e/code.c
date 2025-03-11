@@ -1,11 +1,11 @@
 #include<stdio.h>
-int reverse(int arr[],int a,int b ){
+void reverse(int arr[],int a,int b ){
     for(int i=a,j=b;i<=j;i++,j--){
         int temp = arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    return reverse;
+    return ;
 }
 int main(){
     int n;
@@ -20,7 +20,10 @@ int main(){
 
         }
     }
-    printf("%d",arr)
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+    
     
     return 0;
 
