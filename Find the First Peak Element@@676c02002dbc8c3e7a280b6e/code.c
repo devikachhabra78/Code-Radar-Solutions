@@ -7,10 +7,15 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int pelement=arr[0];
+    int max = arr[0];
     for(int i=1;i<n;i++){
         if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
             pelement=arr[i];
             break;
+        }
+        else if(arr[i]>max){
+            max = arr[i];
+            pelement=max;
         }
         else{
             pelement=-1;
