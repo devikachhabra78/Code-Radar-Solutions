@@ -15,6 +15,6 @@ int main(){
             break;   
         }
     }
-    printf("%d",i);
+    printf("%d",index);
     return 0;
 }
