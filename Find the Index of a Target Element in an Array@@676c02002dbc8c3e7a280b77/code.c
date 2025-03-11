@@ -7,15 +7,14 @@ int main(){
         scanf("%d\n",&arr[i]);
     }
     int T;
+    int index=-1;
     scanf("%d\n",&T);
     for(int i=0;i<n;i++){
         if(arr[i]==T){
-            printf("%d",i);
-            
-        }
-        else{
-            return -1;
+            index =  i;
+            break;   
         }
     }
+    printf("%d",i);
     return 0;
 }
