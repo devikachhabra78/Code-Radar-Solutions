@@ -12,6 +12,9 @@ int main(){
             pelement=arr[i];
             break;
         }
+        else{
+            pelement=-1;
+        }
 
     }
     printf("%d",pelement);
