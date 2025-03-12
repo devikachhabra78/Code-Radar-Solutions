@@ -20,7 +20,7 @@ int main(){
     }
     int count = 0;
     for(int i=0;i<n;i++){
-        if(prime(arr[i])){
+        if(Prime(arr[i])){
             count++;
 
         }
