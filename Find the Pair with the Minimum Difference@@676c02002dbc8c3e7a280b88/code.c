@@ -17,8 +17,9 @@ int main(){
             
                 break;
             }
-        printf("%d %d",arr[i],arr[j]);
+        
         }
+        printf("%d %d",arr[i],arr[j]);
         
         
     }
