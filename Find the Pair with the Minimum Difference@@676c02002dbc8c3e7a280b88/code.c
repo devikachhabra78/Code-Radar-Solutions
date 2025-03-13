@@ -14,10 +14,11 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]-arr[j]==diff){
-                printf("%d %d",arr[i],arr[j]);
+            
                 break;
             }
         }
+        printf("%d %d",arr[i],arr[j]);
         
     }
     return 0;
