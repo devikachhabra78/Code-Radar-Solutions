@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d\n",&arr[i]);
     }
-    int diff=INT_MIN;
+    int mindiff=INT_MIN;
     int num1,num2;
     if(n<2){
         return -1;
@@ -15,7 +15,9 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int diff = arr[i]-arr[j];
-            if(diff<0){
+            if(diff<0)diff = -diff;
+            if(diff<mindiff){
+                diff = mindiff;
                 num1= arr[i];
                 num2= arr[j];
                 break;
