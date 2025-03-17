@@ -7,7 +7,7 @@ int main(){
         scanf("%d\n",&arr[i]);
     }
     if(n<2){
-        printf
+        printf("-1");
     }
     int majorityelement=arr[0];
     int count = 0;
