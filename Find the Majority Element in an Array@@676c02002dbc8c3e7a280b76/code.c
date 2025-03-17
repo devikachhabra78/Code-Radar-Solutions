@@ -15,7 +15,7 @@ int main(){
         }
 
     }
-    if(count < n/2){
+    if(count > n/2){
         printf("%d",majorityelement);
     }
     else{
