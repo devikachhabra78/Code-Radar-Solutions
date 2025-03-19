@@ -1,12 +1,12 @@
 #include<stdio.h>
-int isPalindrome(int arr[]){
-    int arr[],original,r=0;
+int isPalindrome(int num){
+    int num,original,r=0;
     scanf("%d",&n);
     original = n;
     while(n>0){
         r = r*10;
-        r = r + (n%10);
-        n = n/10;
+        r = r + (num%10);
+        num = num/10;
     }
     if(original==r){
         return 1;
