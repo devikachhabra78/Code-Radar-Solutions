@@ -14,6 +14,7 @@ int main(){
         else{
             return 0;
         }
+    }
     if(mono){
         printf("NO");
     }
@@ -23,5 +24,4 @@ int main(){
 
     
     return 0;
-}
 }
