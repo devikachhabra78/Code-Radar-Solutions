@@ -2,7 +2,7 @@
 int isPalindrome(int num){
     int original,r=0;
     scanf("%d",&num);
-    original = n;
+    original = num;
     while(n>0){
         r = r*10;
         r = r + (num%10);
