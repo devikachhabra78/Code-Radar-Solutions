@@ -9,17 +9,12 @@ int main(){
     int mono=1;
     for(int i=0;i<n;i++){
         if(arr[i]<=arr[i+1] || arr[i]>=arr[i+1]){
-            return 1;
+            printf("YES");
         }
         else{
-            return 0;
+            printf("NO");
         }
     }
-    if(mono==1){
-        printf("YES");
-    }
-    else{
-        printf("NO");
-    }
+   
     return 0;
 }
