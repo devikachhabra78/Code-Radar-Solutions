@@ -8,12 +8,7 @@ int isPalindrome(int num){
         r = r + (num%10);
         num = num/10;
     }
-    if(original==r){
-        return 1;
-    }
-    else{
-        return 0;
-    }
+    return (original == r);
 }
 int main(){
     int n;
