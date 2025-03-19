@@ -6,15 +6,21 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int mono=1;
+    int mono = 0;
     for(int i=0;i<n;i++){
         if(arr[i]<=arr[i+1] || arr[i]>=arr[i+1]){
-            printf("YES");
+            return 1;
         }
         else{
-            printf("NO");
+            return 0;
         }
+    if(mono){
+        printf("NO");
     }
+    else{
+        printf("YES");
+    }
+
    
     return 0;
 }
