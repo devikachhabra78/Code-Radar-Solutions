@@ -4,7 +4,7 @@ int main(){
     scanf("%d\n",&n);
     int arr[n],visited[n];
     for(int i=0;i<=n;i++){
-        scanf("%d",&arr[i]);
+        scanf("%d\n",&arr[i]);
         visited[i]=0;
     }
     for(int i=0;i<n;i++){
