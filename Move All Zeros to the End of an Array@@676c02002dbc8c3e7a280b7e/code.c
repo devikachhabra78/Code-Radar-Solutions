@@ -16,7 +16,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(arr[i]==0){
-            reverse(arr,i,i+1);
+            arr[i]=arr[i+1];
             continue;
 
         }
