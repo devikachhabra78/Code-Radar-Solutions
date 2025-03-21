@@ -2,11 +2,11 @@
 int main(){
     int n;
     scanf("%d\n",&n);
-    if(n !> 0){
-        printf("True");
+    if(n > 0){
+        printf("False");
     }
     else{
-        printf("False");
+        printf("True");
     }
     return 0;
 }
