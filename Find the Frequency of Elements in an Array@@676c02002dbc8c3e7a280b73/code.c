@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main(){
     int n;
-    scanf("%d\n",&n);
+    scanf("%d",&n);
     int arr[n],visited[n];
     for(int i=0;i<=n;i++){
-        scanf("%d\n",&arr[i]);
+        scanf("%d",&arr[i]);
         visited[i]=0;
     }
     for(int i=0;i<n;i++){
