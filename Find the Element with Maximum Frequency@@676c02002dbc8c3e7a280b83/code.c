@@ -8,9 +8,11 @@ int main(){
     }
     int max=arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]==arr[n-1]){
+        for(int j=i+1;j<n;j++){
+        if(arr[i]==arr[j]){
             max = arr[i];
         }
+    }
     }
     printf("%d",max);
     return 0;
