@@ -1,5 +1,6 @@
 #include<stdio.h>
 void isPrime(int n){
+    isPrime=0;
     if(n<=1){
         return 0;
     }
