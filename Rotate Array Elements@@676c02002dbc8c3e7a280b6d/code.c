@@ -5,7 +5,7 @@ void Rotate(int arr[],int a,int b){
         arr[i] = arr[j];
         arr[j] = temp;
     }
-    return;
+    return ;
 }
 int main(){
     int n;
@@ -16,7 +16,7 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    k= k%n;
+    k = k % n;
     Rotate(arr,0,n-1);
     Rotate(arr,0,k-1);
     Rotate(arr,k,n-1);
