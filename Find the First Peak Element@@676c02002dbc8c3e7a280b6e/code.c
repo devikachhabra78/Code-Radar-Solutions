@@ -4,11 +4,11 @@ int main(){
     scanf("%d\n",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+        scanf("%d\n",&arr[i]);
     }
-    int pelement=arr[0];
     int max = arr[0];
-    for(int i=1;i<n;i++){
+    int pelement=arr[0];
+    for(int i=0;i<n;i++){
         if(arr[i]>arr[i+1] && arr[i]>arr[i-1]){
             pelement=arr[i];
             break;
@@ -20,8 +20,6 @@ int main(){
         else{
             pelement=-1;
         }
-
     }
-    printf("%d",pelement);
     return 0;
 }
