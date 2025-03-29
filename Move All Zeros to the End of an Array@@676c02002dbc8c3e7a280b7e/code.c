@@ -9,12 +9,13 @@ int main(){
     int zero_index = 0;
     for(int i=0;i<n;i++){
         if(arr[i]!=0){
-            arr[zero_index]=arr[i];
-            zero_index++;
+            int temp = arr[i];
+            arr[i]=arr[zero_index];
+            arr[zero_index]=temp;
         }
     }
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 
