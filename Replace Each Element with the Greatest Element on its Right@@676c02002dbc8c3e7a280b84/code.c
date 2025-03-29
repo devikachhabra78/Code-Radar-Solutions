@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int max_right=-1;
-    for(int i=n;i>=0;i--){
+    for(int i=n-1;i>=0;i--){
         int temp = arr[i];
         arr[i]=max_right;
         if(temp>max_right){
