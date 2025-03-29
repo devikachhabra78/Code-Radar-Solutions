@@ -1,6 +1,6 @@
 #include<stdio.h>
 int isPalindrome(int num){
-    int original = num;r=0;
+    int original = num,r=0;
     if(n<0) return 0;
     while(n>0){
         r = r*10;
