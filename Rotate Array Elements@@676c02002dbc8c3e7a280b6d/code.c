@@ -20,6 +20,6 @@ int main(){
     Rotate(arr,0,n-1);
     Rotate(arr,0,k-1);
     Rotate(arr,k,n-1);
-    
+    printf("%d",arr);
     return 0;
 }
