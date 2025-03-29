@@ -4,18 +4,13 @@ int main(){
     scanf("%d\n",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    
-    for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
-            printf("%d\n",arr[i]);
-            return 0;
+                printf("%d\n",arr[i]);
+                break;
             }
         }
     }
-    printf("-1\n");
-
+    printtf("-1\n");
     return 0;
 }
