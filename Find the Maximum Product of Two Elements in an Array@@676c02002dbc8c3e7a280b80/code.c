@@ -16,8 +16,9 @@ int main(){
         else if(arr[i]>smax && arr[i]!=max){
             smax = arr[i];
         }
-        int product = max * smax;
+     
     }
+    int product=max * smax;
     printf("%d",product);
     return 0;
 }
