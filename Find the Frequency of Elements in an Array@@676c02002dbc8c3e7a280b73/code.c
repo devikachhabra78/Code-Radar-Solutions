@@ -11,7 +11,7 @@ int main(){
         if(visited[i]==1){
             continue;
         }
-        int count;
+        int count=1;
         for(int j=i+1;j<n;j++){
             count++;
             visited[j]=1;
