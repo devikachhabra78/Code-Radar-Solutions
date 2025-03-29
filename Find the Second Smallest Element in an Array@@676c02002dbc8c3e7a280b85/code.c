@@ -13,7 +13,7 @@ int main(){
             smin = min;
             min = arr[i];
         }
-        else if(arr[i]<smin && arr[i]!=min){
+        else if(arr[i]>min && arr[i]<smin){
             smin = arr[i];
             
         }
