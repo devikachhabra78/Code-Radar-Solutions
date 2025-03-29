@@ -21,5 +21,6 @@ int main(){
             pelement=-1;
         }
     }
+    printf("%d",pelement);
     return 0;
 }
