@@ -4,18 +4,16 @@ int main(){
     scanf("%d\n",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d\n",&arr[i]);
+        scanf("%d",&arr[i]);
     }
-    int max_right = -1;
-    for(int i=n-1;i>=0;i--){
+    int max_right=-1;
+    for(int i=n;i>=0;i--){
         int temp = arr[i];
-        arr[i] = max_right;
-        if(temp > max_right){
-            max_right = temp;
+        arr[i]=max_right;
+        if(temp>max_right){
+            max_right=temp;
         }
     }
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
+    printf("%d",arr[i]);
     return 0;
 }
