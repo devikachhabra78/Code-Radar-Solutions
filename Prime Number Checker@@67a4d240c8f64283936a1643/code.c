@@ -7,10 +7,10 @@ void isPrime(int n){
     else{
         for(int i=2;i*i<=n;i++){
             if(n%i==0){
-                return 0;
+                printf("0");
             }
             else{
-                return 1;
+                printf("1");
             }
         }
     }
