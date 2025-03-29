@@ -1,4 +1,4 @@
-#inclide<stdio.h>
+#include<stdio.h>
 int isPalindrome(int num){
     int original = num;r=0;
     if(n<0) return 0;
