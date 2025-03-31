@@ -11,22 +11,21 @@ int main(){
         return 0;
     }
     int max = arr[0];
-    int smax = arr[0];
+    int smax = -1;
     for(int i=0;i<n;i++){
-        if(arr[i]<0){
-            arr[i] = -arr[i];
-        }
-        else if(arr[i]>max || arr[i]==arr[i+1]){
+
+        if(arr[i]>max){
             smax = max;
             max = arr[i];
         }
-        else if(arr[i]>smax && arr[i]!=max){
+        else if(arr[i]<max && (smax == -1 || arr[i]>smax)){
             smax = arr[i];
         }
         
 
     }
-    printf("%d",smax);
+    if(smax == -1) printf("-1\n");
+    else printf("%d",smax);
     
     return 0;
 }
