@@ -1,5 +1,5 @@
 #include<stdio.h>
-int isPalindrome(int arr[],int n){
+void isPalindrome(int arr[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]!=arr[n-1-i]){
             return 0;
@@ -9,7 +9,7 @@ int isPalindrome(int arr[],int n){
 }
 int main(){
     int n;
-    scanf("%d\n",&n);
+    scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
@@ -20,5 +20,6 @@ int main(){
     else{
         printf("NO");
     }
+
     return 0;
 }
