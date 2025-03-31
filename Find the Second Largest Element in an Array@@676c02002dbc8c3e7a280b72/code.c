@@ -8,6 +8,7 @@ int main(){
     }
     if(n<2){
         printf("-1\n");
+        return 0;
     }
     int max = arr[0];
     int smax = -1;
