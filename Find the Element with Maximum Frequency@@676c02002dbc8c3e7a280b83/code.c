@@ -21,5 +21,6 @@ int main(){
             min_element = arr[i];
         }
     }
+    printf("%d",min_element);
     return 0;
 }
