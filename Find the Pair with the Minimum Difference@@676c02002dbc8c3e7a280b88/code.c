@@ -1,29 +1,34 @@
 #include<stdio.h>
-#include<limits.h>
+void Sort(int arr[],int n){
+    for(int i=0;i<n;i++){
+        int temp = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    return ;
+}
 int main(){
     int n;
-    scanf("%d\n",&n);
+    scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d\n",&arr[i]);
+        scanf("%d",&arr[i]);
     }
-    int diff=INT_MIN;
-    int num1,num2;
-    if(n<2){
-        return -1;
-    }
+    Sort(arr,n);
+    int max = arr[0];
+    int smax = -1;
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            if(arr[i]-arr[j]==diff){
-            
-                break;
-            }
-            printf("%d %d",arr[i],arr[j]);
-        
+        if(arr[i]>max){
+            smax = max;
+            max = arr[i];
         }
-    
-        
-        
+        else if(arr[i]< max && (smax == -1 || arr[i]>smax)){
+            smax = arr[i];
+        }
+    }
+    int diff = max - smax;
+    for(int i=0;i<n;i++){
+        printf("%d %d",max,smax);
     }
     return 0;
 }
