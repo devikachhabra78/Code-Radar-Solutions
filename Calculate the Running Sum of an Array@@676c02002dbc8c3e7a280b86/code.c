@@ -11,6 +11,9 @@ int main(){
         sum = sum + arr[i];
         arr[i] = sum;
     }
-    printf("%d",sum);
+    for(int i=0;i<n;i++){
+        printf("%d ",sum);
+    }
+    
     return 0;
 }
