@@ -15,6 +15,7 @@ int main(){
         }
         else if(arr[i]<smin && arr[i]!=min){
             smin = arr[i];
+            break;
         }
 
     }
