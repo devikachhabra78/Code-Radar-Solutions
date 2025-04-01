@@ -19,6 +19,7 @@ int main(){
             break;
         }
     }
+    printf("%d",melement);
 
     return 0;
 }
