@@ -1,23 +1,24 @@
 #include<stdio.h>
 int main(){
     int n;
-    scanf("%d\n",&n);
+    scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d\n",&arr[i]);
+        scanf("%d",&arr[i]);
     }
-    int majorityelement=-1;
-    int count = 0;
+    int melement=-1;
     for(int i=0;i<n;i++){
-        if(arr[i]==arr[n-1]){
-            majorityelement = arr[i];
-            count++;
+        int count = 1;
+        for(int j=0;j<n;j++){
+            if(arr[i]==arr[j]){
+                count++;
+            }
         }
+        if(count>n/2){
+            melement=arr[i];
+            break;
+        }
+    }
 
-    }
-    if(count > n/2){
-        printf("%d",majorityelement);
-    }
-   
     return 0;
 }
