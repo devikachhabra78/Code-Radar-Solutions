@@ -8,10 +8,12 @@ int main(){
     }
     int zero_index=0;
     for(int i=0;i<n;i++){
+        if(arr[i]!=0){
         int temp = arr[i];
         arr[i]=arr[zero_index];
         arr[zero_index]=temp;
         zero_index++;
+        }
     }
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
