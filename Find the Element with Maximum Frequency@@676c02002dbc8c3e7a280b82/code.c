@@ -9,6 +9,8 @@ int main(){
     int maxcount = 0;
     int melement=arr[0];
     for(int i=0;i<n;i++){
+        int count = 1;
+        for(int j=0;j<n;j++){
         if(arr[i]==arr[i+1]){
             arr[i]=melement;
             count++;
