@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<n;i++){
         int count = 1;
         for(int j=0;j<n;j++){
-        if(arr[i]==arr[i+1]){
+        if(arr[i]==arr[j]){
             arr[i]=melement;
             count++;
         }
@@ -20,7 +20,7 @@ int main(){
     if(count>=maxcount){
         printf("%d",melement);
     }
-    
+    }
     
     return 0;
 }
