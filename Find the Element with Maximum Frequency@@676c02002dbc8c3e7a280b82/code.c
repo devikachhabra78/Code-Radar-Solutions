@@ -6,7 +6,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d\n",&arr[i]);
     }
-    int count = 0;
+    int maxcount = 0;
     int melement=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]==arr[i+1]){
@@ -15,7 +15,7 @@ int main(){
         }
 
     }
-    if(count>=n/2){
+    if(count>=maxcount){
         printf("%d",melement);
     }
     
